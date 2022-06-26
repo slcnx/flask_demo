@@ -6,7 +6,7 @@ RUN sed -i 's@dl-cdn.alpinelinux.org@mirrors.aliyun.com@g' /etc/apk/repositories
 
 RUN pip install --no-cache-dir flask 
 RUN apk --no-cache add python3-dev build-base linux-headers pcre-dev
-ADD demo /app/
+ADD  ./ /app/
 
 WORKDIR /app/
 
